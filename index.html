@@ -46,13 +46,13 @@
   let image = document.getElementById('time-image');     // Specify image ID
 
   // Change image source based on current hour
-  if (time > 5 && time < 13) {
+  if (time > 5 && time < 13) { // 6am to 12pm
     image.src = 'sunrise.jpg';
-  } else if (time > 12 && time < 19) {
+  } else if (time > 12 && time < 19) { // 12pm to 6pm
     image.src = 'daytime.png';
-  } else if (time > 18 && time < 25) {
+  } else if (time > 18 && time < 25) { // 6pm to 12am
     image.src = 'night.png';
-  } else if (time < 6) {
+  } else if (time < 6) { // anytime before 6am
     image.src = 'night.png';
   }
 </script>
