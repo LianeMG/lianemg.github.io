@@ -1,4 +1,5 @@
 <html>
+  
   <style>
     .img-container {
       display: block;
@@ -11,32 +12,37 @@
       font-size: 12px;
     }
   </style>
+  
 <div class = "all-text"> 
-<body>
-<h1>COP4813 Web Applications</h1>
-<h2>Assignment 3: Time-Based Image Display Webpage</h2>
-<p>Liane Gonzalez</p>
-<p>Computer Science, B.S.</p>
-<p>Intro:<br>
-  This webpage will display a single image that changes based on the time of day:
-  <ul>
-  <li>Morning (6am - 12pm): Show a morning image (e.g., sunrise)</li>
-  <li>Afternoon (12pm – 6pm): Show an afternoon image (e.g., sunshine or daytime activity)</li>
-  <li>Evening/Night (6pm – 6am): Show a night image (e.g., moon or city lights)</li>
-  </ul>
+  <body>
+    <h1>COP4813 Web Applications</h1>
+    <h2>Assignment 3: Time-Based Image Display Webpage</h2>
+    <p>Liane Gonzalez</p>
+    <p>Computer Science, B.S.</p>
+    <p>Intro:<br>
+        This webpage will display a single image that changes based on the time of day:
+      <ul>
+        <li>Morning (6am - 12pm): Show a morning image (e.g., sunrise)</li>
+        <li>Afternoon (12pm – 6pm): Show an afternoon image (e.g., sunshine or daytime activity)</li>
+        <li>Evening/Night (6pm – 6am): Show a night image (e.g., moon or city lights)</li>
+      </ul>
 
-  <div class = "img-container">
-    <img id="time-image" src="">
-  </div>
-</p>
-</body>
+      <!-- This container will display and style the image. Image selection based on time. -->
+      <div class = "img-container">
+        <img id="time-image" src="">
+      </div>
+
+    </p>
+  </body>
 </div>
+  
 </html>
 
 <script>
-  let time = new Date().getHours();
-  let image = document.getElementById('time-image');
+  let time = new Date().getHours();                      // Retrieve hour in military time
+  let image = document.getElementById('time-image');     // Specify image ID
 
+  // Change image source based on current hour
   if (time > 5 && time < 13) {
     image.src = 'sunrise.jpg';
   } else if (time > 12 && time < 19) {
