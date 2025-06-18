@@ -12,14 +12,14 @@
   <li>Evening/Night (6pm – 6am): Show a night image (e.g., moon or city lights)</li>
   </ul>
 
-  <img id="my-image" src="">
+  <img id="time-image" src="">
 </p>
 </body>
 </html>
 
 <script>
   let time = new Date().getHours();
-  let image = document.getElementById('my-image');
+  let image = document.getElementById('time-image');
 
   if (time > 5 && time < 13) {
     image.src = 'sunrise.jpg';
