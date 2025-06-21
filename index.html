@@ -12,7 +12,68 @@
       font-family: Arial;
       font-size: 12px;
     }
+
+    .menu {
+  background-color: #08566e;
+}
+
+.menu a {
+  color: white;
+  text-align: center;
+}
+
+
+.subMenu .subBtn {
+  color: white;
+  margin: 0;
+}
+
+.menu a:hover, .subMenu:hover .subBtn {
+  background-color: #033342;
+}
+
+.sub-content {
+  background-color: white;
+  z-index: 1;
+}
+
+.subBtn-content a {
+  color: white;
+}
+
+.subBtn-content a:hover {
+  background-color: white;
+  color: black;
+}
   </style>
+
+  <div class="menu">
+  <a href="#home">Home</a>
+  <div class="subMenu">
+    <button class="subBtn">Language Arts </button>
+    <div class="sub-content">
+      <a href="#nouns">Nouns</a>
+      <a href="#verbs">Verbs</a>
+      <a href="#conjunctions">Conjunctions</a>
+    </div>
+  </div>
+  <div class="subMenu">
+    <button class="subBtn">Physical Education </button>
+    <div class="sub-content">
+      <a href="#volleyball">Volley Ball</a>
+      <a href="#soccer">Soccer</a>
+      <a href="#dodgeball">Dodge Ball</a>
+    </div>
+  </div>
+  <div class="subMenu">
+    <button class="subBtn">Art </button>
+    <div class="sub-content">
+      <a href="#sketching">Sketching</a>
+      <a href="#painting">Painting</a>
+      <a href="#perspective">Perspective</a>
+    </div>
+  </div>
+</div>
   
 <div class = "all-text"> 
   <body>
